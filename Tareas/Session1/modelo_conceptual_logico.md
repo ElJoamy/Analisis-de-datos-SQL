@@ -102,14 +102,29 @@ CREATE TABLE Supermercado (
 ```sql
 CREATE TABLE Empleados (
     ID_Empleado INT PRIMARY KEY,
+    ID_Sucursal INT,
     Nombre NVARCHAR(50),
-    Puesto NVARCHAR(30)
+    Puesto NVARCHAR(30),
+    CONSTRAINT FK_Sucursal FOREIGN KEY (ID_Sucursal) REFERENCES Supermercado(ID_Sucursal)
 );
 ```
 
 ### Diagrama ER
 <div class="mermaid">
 erDiagram
+    Supermercado {
+        INT ID_Sucursal PK
+        NVARCHAR Nombre
+        NVARCHAR Direccion
+    }
+
+    Empleados {
+        INT ID_Empleado PK
+        INT ID_Sucursal FK
+        NVARCHAR Nombre
+        NVARCHAR Puesto
+    }
+
     Clientes {
         INT ID_Cliente PK
         NVARCHAR Nombre
@@ -141,23 +156,11 @@ erDiagram
         INT Cantidad
     }
 
-    Supermercado {
-        INT ID_Sucursal PK
-        NVARCHAR Nombre
-        NVARCHAR Direccion
-    }
-
-    Empleados {
-        INT ID_Empleado PK
-        NVARCHAR Nombre
-        NVARCHAR Puesto
-    }
-
+    Supermercado ||--o{ Empleados : emplea
+    Supermercado ||--o{ Productos : contiene
     Clientes ||--o{ DocumentosCompra : realiza
     DocumentosCompra ||--o{ Compra_Producto : incluye
     Productos }o--o{ Compra_Producto : es_parte
-    Supermercado ||--o{ Productos : contiene
-    Supermercado ||--o{ Empleados : pertenece
     Empleados ||--o{ DocumentosCompra : atiende
 </div>
 
