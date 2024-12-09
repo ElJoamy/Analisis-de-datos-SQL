@@ -103,6 +103,56 @@ CREATE TABLE Empleados (
 );
 ```
 
+### Diagrama ER
+```mermaid
+erDiagram
+    Clientes {
+        INT ID_Cliente PK
+        NVARCHAR Nombre
+        NVARCHAR Telefono
+        NVARCHAR Correo
+    }
+
+    Productos {
+        INT ID_Producto PK
+        NVARCHAR Nombre
+        NVARCHAR Categoria
+        DECIMAL Precio
+        INT Stock
+    }
+
+    DocumentosCompra {
+        INT ID_Compra PK
+        INT ID_Cliente FK
+        DATETIME Fecha
+        DECIMAL Total
+        NVARCHAR FormaPago
+    }
+
+    Compra_Producto {
+        INT ID_Compra FK
+        INT ID_Producto FK
+        INT Cantidad
+    }
+
+    Supermercado {
+        INT ID_Sucursal PK
+        NVARCHAR Nombre
+        NVARCHAR Direccion
+    }
+
+    Empleados {
+        INT ID_Empleado PK
+        NVARCHAR Nombre
+        NVARCHAR Puesto
+    }
+
+    Clientes ||--o{ DocumentosCompra : realiza
+    DocumentosCompra ||--o{ Compra_Producto : incluye
+    Productos }o--o{ Compra_Producto : es_parte
+    Supermercado ||--o{ Empleados : pertenece
+```
+
 ## Link:
 - Puedes acceder a la tarea en el siguiente [enlace](https://classroom.google.com/c/NzM5NDcxNTYyMTMw/a/NzM5NjI1ODA5MjUx/details?pli=1).
 
