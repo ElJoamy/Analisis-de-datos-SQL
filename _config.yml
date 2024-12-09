@@ -1,0 +1,57 @@
+theme: jekyll-theme-cayman  # Puedes elegir otro tema compatible con GitHub Pages
+title: "Solutions to SQL & Data Interview Questions"
+description: "A collection of solutions to SQL and data interview questions by Joamy"
+author: "Joseph Anthony Meneses Salguero (Joamy)"
+email: "joamysalguero1@gmail.com"
+baseurl: "/SQL-Interview"  # Solo si el repositorio no está en el root "/"
+url: "https://eljoamy.github.io/SQL-Interview"
+
+# Redes sociales
+social_links:
+  facebook: "[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/JosephAnthonyMenesesSalguero)"
+  instagram: "[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/joseph_joamy)"
+  linkedin: "[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/joamy5902)"
+  medium: "[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@joamysalguero1)"
+  x: "[![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/JosephJoamy)"
+  github: "[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/ElJoamy/SQL-Interview)"
+
+# Configuración de páginas de navegación (si el tema soporta header y footer)
+header_pages:
+  - README.md  # Página de inicio
+footer_pages:
+  - README.md  # Página de inicio o una página de contacto, si tienes
+
+# Plugins para funcionalidades adicionales en Jekyll
+plugins:
+  - jekyll-feed        # RSS feed para el sitio
+  - jekyll-sitemap     # Mapa del sitio para mejorar SEO
+  - jekyll-seo-tag     # Mejora el SEO del sitio
+
+# Configuración de paginación
+paginate: 10
+paginate_path: "/page:num/"
+
+# Opciones de inclusión y exclusión de carpetas o archivos
+include:
+  - assets
+  - _pages
+  - _posts
+exclude:
+  - node_modules
+  - .gitignore
+  - tree.txt
+
+# Datos adicionales para el sitio, como tu información personal
+person:
+  full_name: "Joseph Anthony Meneses Salguero"
+  nickname: "Joamy"
+  email: "joamysalguero1@gmail.com"
+  github_url: "https://github.com/ElJoamy/SQL-Interview"
+
+# Configuración para personalizar las redes sociales sin los escudos, si el tema los soporta directamente
+facebook_username: "JosephAnthonyMenesesSalguero"
+instagram_username: "joseph_joamy"
+linkedin_username: "joamy5902"
+medium_username: "joamysalguero1"
+x_username: "JosephJoamy"
+github_username: "ElJoamy"
