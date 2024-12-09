@@ -1,10 +1,10 @@
 theme: jekyll-theme-cayman  # Puedes elegir otro tema compatible con GitHub Pages
-title: "Solutions to SQL & Data Interview Questions"
-description: "A collection of solutions to SQL and data interview questions by Joamy"
+title: "Análisis de Datos con SQL"
+description: "Curso completo de SQL para análisis de datos"
 author: "Joseph Anthony Meneses Salguero (Joamy)"
 email: "joamysalguero1@gmail.com"
-baseurl: "/SQL-Interview"  # Solo si el repositorio no está en el root "/"
-url: "https://eljoamy.github.io/SQL-Interview"
+baseurl: "/Analisis-de-datos-SQL"  # Ajustado al nuevo proyecto
+url: "https://github.com/ElJoamy/Analisis-de-datos-SQL"
 
 # Redes sociales
 social_links:
@@ -46,7 +46,7 @@ person:
   full_name: "Joseph Anthony Meneses Salguero"
   nickname: "Joamy"
   email: "joamysalguero1@gmail.com"
-  github_url: "https://github.com/ElJoamy/SQL-Interview"
+  github_url: "https://github.com/ElJoamy/Analisis-de-datos-SQL"
 
 # Configuración para personalizar las redes sociales sin los escudos, si el tema los soporta directamente
 facebook_username: "JosephAnthonyMenesesSalguero"

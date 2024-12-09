@@ -11,7 +11,35 @@ Contiene todo el material de las sesiones de clase. Cada sesión incluye ejemplo
 ### **2. [Tareas](Tareas/README.md)**
 Incluye todas las tareas asignadas en el curso, con enlaces directos a las soluciones y recursos.
 
----
+
+## 🛠 Configuración del Proyecto
+
+1. **Configura GitHub Pages**:
+   - Ve a la configuración del repositorio.
+   - Activa GitHub Pages apuntando al branch `main` y a la carpeta `/root` (si está en el nivel principal).
+
+2. **Estructura recomendada**:
+   - `README.md`: Archivo principal que redirige a los demás recursos.
+   - Subcarpetas organizadas según clases y tareas, cada una con su propio `README.md`.
+
+## 📅 Curso en Desarrollo
+
+- **Inicio:** 27 de noviembre
+- **Duración:** 5 semanas
+- **Modalidad:** Online vía Zoom
+
+El repositorio se actualizará semanalmente con nuevo contenido y actividades. ¡Mantente conectado!
+
+## 📚 Recursos Adicionales
+- [Smart Data - Análisis de Datos con SQL](https://smartdata.com)
+- [Documentación oficial de SQL Server](https://learn.microsoft.com/en-us/sql/sql-server)
+
+### 🔗 Navegación Rápida
+- [Clases](Clases/README.md)
+- [Tareas](Tareas/README.md)
+
+Si tienes preguntas o sugerencias, no dudes en contactarme a través de [LinkedIn](https://linkedin.com/in/joamy5902) o [email](mailto:joamysalguero1@gmail.com).
+
 ## ✍️ Autor
 <div style="background-image: url('imgs/background.jpg'); background-size: cover; padding: 20px; text-align: center; border-radius: 10px;">
     <a href="https://github.com/ElJoamy" style="text-decoration: none; color: black; display: inline-block; text-align: center;">
@@ -23,3 +51,5 @@ Incluye todas las tareas asignadas en el curso, con enlaces directos a las soluc
     <a href="mailto:joamysalguero1@gmail.com" title="Email"><img src="https://img.shields.io/badge/-Email-red?style=flat&logo=gmail"></a>
     <a href="https://medium.com/@joamysalguero1" title="Medium"><img src="https://img.shields.io/badge/-Medium-black?style=flat&logo=medium"></a>
 </div>
+
+
