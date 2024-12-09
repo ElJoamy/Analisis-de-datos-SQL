@@ -11,17 +11,6 @@ Contiene todo el material de las sesiones de clase. Cada sesión incluye ejemplo
 ### **2. [Tareas](Tareas/README.md)**
 Incluye todas las tareas asignadas en el curso, con enlaces directos a las soluciones y recursos.
 
-
-## 🛠 Configuración del Proyecto
-
-1. **Configura GitHub Pages**:
-   - Ve a la configuración del repositorio.
-   - Activa GitHub Pages apuntando al branch `main` y a la carpeta `/root` (si está en el nivel principal).
-
-2. **Estructura recomendada**:
-   - `README.md`: Archivo principal que redirige a los demás recursos.
-   - Subcarpetas organizadas según clases y tareas, cada una con su propio `README.md`.
-
 ## 📅 Curso en Desarrollo
 
 - **Inicio:** 27 de noviembre
