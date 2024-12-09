@@ -26,6 +26,7 @@ plugins:
   - jekyll-feed        # RSS feed para el sitio
   - jekyll-sitemap     # Mapa del sitio para mejorar SEO
   - jekyll-seo-tag     # Mejora el SEO del sitio
+  - jekyll-mermaid     # Diagramas de flujo y secuencia con Mermaid
 
 # Configuración de paginación
 paginate: 10
