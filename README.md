@@ -5,6 +5,8 @@ Bienvenido al repositorio de **Análisis de Datos con SQL**, donde encontrarás 
 
 ## 📂 Estructura del Repositorio
 
+Si queires ver alguna carpeta dale click en el nombre de la carpeta que deseas ver.
+
 ### **1. [Clases](Clases/README.md)**
 Contiene todo el material de las sesiones de clase. Cada sesión incluye ejemplos prácticos y documentación detallada.
 
@@ -24,6 +26,7 @@ El repositorio se actualizará semanalmente con nuevo contenido y actividades. �
 - [Documentación oficial de SQL Server](https://learn.microsoft.com/en-us/sql/sql-server)
 
 ### 🔗 Navegación Rápida
+Si queires ver alguna carpeta dale click en el nombre de la carpeta que deseas ver.
 - [Clases](Clases/README.md)
 - [Tareas](Tareas/README.md)
 
