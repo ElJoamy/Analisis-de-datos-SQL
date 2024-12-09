@@ -9,7 +9,7 @@ Se dividiran por carpetas:
 - ...
 
 Para entrar a cualquiera de las carpetas, solo da click en el nombre de la carpeta que deseas ver.
-- [Click aqui para ver la Session1](Session1/modelo_conceptual_logico.md)
+- [Click aqui para ver la tarea de la Session1](Session1/modelo_conceptual_logico.md)
 
 ## ✍️ Autor
 <div style="background-image: url('../imgs/background.jpg'); background-size: cover; padding: 20px; text-align: center; border-radius: 10px;">
