@@ -104,7 +104,7 @@ CREATE TABLE AsignaciónCursoProfesorAulaHorario (
 ```
 
 ## Diagrama ER en Mermaid
-```mermaid
+<div class="mermaid">
 erDiagram
     MiembroCLUB {
         NVARCHAR NOMBRE
@@ -146,5 +146,9 @@ erDiagram
     Profesores ||--o{ AsignacionCursoProfesorAulaHorario : "enseña"
     Aulas ||--o{ AsignacionCursoProfesorAulaHorario : "se_dicta_en"
     Horario ||--o{ AsignacionCursoProfesorAulaHorario : "dictado_en"
+</div>
 
-```
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>

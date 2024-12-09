@@ -104,7 +104,7 @@ CREATE TABLE Empleados (
 ```
 
 ### Diagrama ER
-```mermaid
+<div class="mermaid">
 erDiagram
     Clientes {
         INT ID_Cliente PK
@@ -151,7 +151,12 @@ erDiagram
     DocumentosCompra ||--o{ Compra_Producto : incluye
     Productos }o--o{ Compra_Producto : es_parte
     Supermercado ||--o{ Empleados : pertenece
-```
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
 
 ## Link:
 - Puedes acceder a la tarea en el siguiente [enlace](https://classroom.google.com/c/NzM5NDcxNTYyMTMw/a/NzM5NjI1ODA5MjUx/details?pli=1).
