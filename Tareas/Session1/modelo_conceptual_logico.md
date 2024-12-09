@@ -55,10 +55,12 @@ CREATE TABLE Clientes (
 ```sql
 CREATE TABLE Productos (
     ID_Producto INT PRIMARY KEY,
+    ID_Sucursal INT,
     Nombre NVARCHAR(50),
     Categoria NVARCHAR(30),
     Precio DECIMAL(10, 2),
-    Stock INT
+    Stock INT,
+    CONSTRAINT FK_Sucursal FOREIGN KEY (ID_Sucursal) REFERENCES Supermercado(ID_Sucursal)
 );
 ```
 
@@ -67,10 +69,12 @@ CREATE TABLE Productos (
 CREATE TABLE DocumentosCompra (
     ID_Compra INT PRIMARY KEY,
     ID_Cliente INT,
+    ID_Empleado INT,
     Fecha DATETIME,
     Total DECIMAL(10, 2),
     FormaPago NVARCHAR(20),
-    CONSTRAINT FK_Cliente FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID_Cliente)
+    CONSTRAINT FK_Cliente FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID_Cliente),
+    CONSTRAINT FK_Empleado FOREIGN KEY (ID_Empleado) REFERENCES Empleados(ID_Empleado)
 );
 ```
 
@@ -115,6 +119,7 @@ erDiagram
 
     Productos {
         INT ID_Producto PK
+        INT ID_Sucursal FK
         NVARCHAR Nombre
         NVARCHAR Categoria
         DECIMAL Precio
@@ -124,6 +129,7 @@ erDiagram
     DocumentosCompra {
         INT ID_Compra PK
         INT ID_Cliente FK
+        INT ID_Empleado FK
         DATETIME Fecha
         DECIMAL Total
         NVARCHAR FormaPago
@@ -150,7 +156,9 @@ erDiagram
     Clientes ||--o{ DocumentosCompra : realiza
     DocumentosCompra ||--o{ Compra_Producto : incluye
     Productos }o--o{ Compra_Producto : es_parte
+    Supermercado ||--o{ Productos : contiene
     Supermercado ||--o{ Empleados : pertenece
+    Empleados ||--o{ DocumentosCompra : atiende
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
@@ -158,8 +166,35 @@ erDiagram
     mermaid.initialize({ startOnLoad: true });
 </script>
 
+### **Relaciones Actualizadas**
+
+1. **Clientes realiza DocumentosCompra**
+   - Relación de `1:N`, ya que un cliente puede realizar varias compras, pero cada compra pertenece a un único cliente.
+
+2. **DocumentosCompra incluye Compra_Producto**
+   - Relación de `1:N`, donde una compra puede incluir múltiples productos, pero cada producto comprado pertenece a un único documento de compra.
+
+3. **Productos es_parte Compra_Producto**
+   - Relación de `N:M`, ya que un producto puede estar en múltiples compras, y cada compra puede incluir varios productos.
+
+4. **Supermercado contiene Productos**
+   - Relación de `1:N`, ya que un supermercado puede tener múltiples productos, pero cada producto pertenece a una única sucursal.
+
+5. **Supermercado emplea Empleados**
+   - Relación de `1:N`, ya que un supermercado puede tener múltiples empleados, pero cada empleado pertenece a una única sucursal.
+
+6. **Empleados atienden DocumentosCompra**
+   - Relación de `1:N`, ya que un empleado puede gestionar varias compras, pero cada compra es atendida por un único empleado.
+
+### **Conexiones Visuales Actualizadas**
+- **Llave Primaria (PK)**: Se define con el atributo `PK` en las entidades para identificar de manera única cada registro.
+- **Llave Foránea (FK)**: Representa una conexión entre tablas relacionadas y asegura integridad referencial.
+- **Relaciones**: Indicadas con notaciones como:
+  - `||--o{` para relaciones 1:N (uno a muchos).
+  - `}o--o{` para relaciones N:M (muchos a muchos).
+
 ## Link:
-- Puedes acceder a la tarea en el siguiente [enlace](https://classroom.google.com/c/NzM5NDcxNTYyMTMw/a/NzM5NjI1ODA5MjUx/details?pli=1).
+- Puedes acceder a la tarea en el classroom en el siguiente [enlace](https://classroom.google.com/c/NzM5NDcxNTYyMTMw/a/NzM5NjI1ODA5MjUx/details?pli=1).
 
 ## ✍️ Autor
 <div style="background-image: url('../../imgs/background.jpg'); background-size: cover; padding: 20px; text-align: center; border-radius: 10px;">
