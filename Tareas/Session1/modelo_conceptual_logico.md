@@ -20,7 +20,7 @@ Los casos que deseen exponerlos tendrán un punto adicional sobre el trabajo.
 
 El modelo conceptual identifica las entidades, atributos y relaciones necesarias para gestionar un documento de compra en un supermercado.
 
-### **Entidades y Propiedades Actualizadas**
+### **Entidades y Propiedades**
 
 1. **Cliente**: 
    - **Propiedades**: 
