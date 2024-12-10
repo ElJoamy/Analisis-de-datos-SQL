@@ -169,7 +169,7 @@ erDiagram
     mermaid.initialize({ startOnLoad: true });
 </script>
 
-### **Relaciones Actualizadas**
+### **Relaciones**
 
 1. **Clientes realiza DocumentosCompra**
    - Relación de `1:N`, ya que un cliente puede realizar varias compras, pero cada compra pertenece a un único cliente.
@@ -189,7 +189,7 @@ erDiagram
 6. **Empleados atienden DocumentosCompra**
    - Relación de `1:N`, ya que un empleado puede gestionar varias compras, pero cada compra es atendida por un único empleado.
 
-### **Conexiones Visuales Actualizadas**
+### **Conexiones Visuales**
 - **Llave Primaria (PK)**: Se define con el atributo `PK` en las entidades para identificar de manera única cada registro.
 - **Llave Foránea (FK)**: Representa una conexión entre tablas relacionadas y asegura integridad referencial.
 - **Relaciones**: Indicadas con notaciones como:
